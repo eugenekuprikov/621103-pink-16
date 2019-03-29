@@ -1,6 +1,6 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Eugene Kuprikov](https://up.htmlacademy.ru/adaptive/16/user/621103).
+* Студент: [Eugene Leon. Kuprikov](https://up.htmlacademy.ru/adaptive/16/user/621103).
 * Наставник: [Юлия Буруяна](https://up.htmlacademy.ru/adaptive/16/user/1016471).
 
 ---
