@@ -1,17 +1,17 @@
 .header {
-  padding-top: 22px;
-  padding-right: 225px;
-  padding-bottom: 22px;
-  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: @light-gray;
   .font(18px; 32px; 300);
-  .site-list__item {
-    padding-top: 23px;
-    padding-right: 90px;
-    padding-bottom: 23px;
-    padding-left: 90px;
+
+  .header__logo {
+    height: 66px;
   }
-  .site-list__link {
-    color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .header__logo {
+    height: 110px;
   }
 }
