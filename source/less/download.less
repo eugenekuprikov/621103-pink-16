@@ -1,11 +1,112 @@
 .download {
-  padding-top: 110px;
+  width: 100%;
+  padding-top: 300px;
   padding-right: 60px;
   padding-bottom: 28px;
   color: @white;
   .font(14px; 24px; 300);
+
+  .download__slogan {
+    display: none;
+  }
+
   .download__downloading {
+    width: 280px;
+    margin-right: 20px;
+    margin-bottom: 116px;
+    margin-left: 19px;
+    padding-top: 20px;
+    padding-right: 39px;
+    padding-bottom: 18px;
+    padding-left: 40px;
     .font(18px; 18px; 700);
     color: @white;
+  }
+
+  .download__color-to-pink {
+    margin-bottom: 28px;
+  }
+
+  .download__info {
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    display: flex;
+    padding-top: 335px;
+
+    .download__app-download {
+      margin-top: -260px;
+    }
+
+    .download__slogan {
+      display: block;
+      width: 170px;
+      margin: 0;
+      margin-left: 20px;
+      margin-bottom: 30px;
+      padding-top: 3px;
+      padding-left: 55px;
+      text-align: center;
+      .font(40px; 48px; 300);
+      color: @white;
+    }
+
+    .download__color-to-pink {
+      margin-top: 225px;
+      margin-left: -170px;
+      order: 2;
+    }
+
+    .download__downloading {
+      margin-bottom: 117px;
+    }
+
+    .download__info {
+      width: 350px;
+      margin-bottom: 113px;
+      padding-left: 0;
+      .font(18px; 24px; 300);
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download {
+    padding-top: 0;
+
+    .download__app-download {
+      margin-top: 45px;
+      margin-left: 85px;
+    }
+
+    .download__slogan {
+      width: 240px;
+      margin-bottom: 60px;
+      .font(50px; 60px; 300);
+    }
+
+    .download__downloading {
+      width: 301px;
+      margin-bottom: 182px;
+      padding-top: 20px;
+      padding-right: 32px;
+      padding-bottom: 16px;
+      padding-left: 32px;
+      .font(21px; 18px; 700);
+    }
+
+    .download__info {
+      margin-bottom: 125px;
+    }
+
+    .download__color-to-pink {
+      margin-top: 640px;
+      margin-left: 50px;
+    }
   }
 }
