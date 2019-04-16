@@ -1,8 +1,25 @@
 .photo-title {
+  margin: 0;
   padding-top: 36px;
   padding-right: 75px;
   padding-bottom: 77px;
   padding-left: 75px;
+  text-align: center;
   color: @white;
   .font(24px; 29px; 300);
+}
+
+@media (min-width: @tablet-width) {
+  .photo-title {
+    padding-top: 0;
+    padding-bottom: 155px;
+    .font(50px; 60px; 300);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-title {
+    padding-right: 278px;
+    padding-left: 278px;
+  }
 }

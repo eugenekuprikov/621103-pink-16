@@ -4,47 +4,53 @@
     <meta charset="utf-8">
     <title>Форма</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
   </head>
   <body>
 
-    <header class="header">
-      <a class="header__logo" href="index.html">
-        <img class="header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Сайт фотоприложения «Пинк»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__menu" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <section class="background-wrapper">
+      <header class="header">
+        <a class="header__logo" href="index.html">
+          <img class="header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Сайт фотоприложения «Пинк»">
+        </a>
+        <button class="header__menu" type="button">Открыть меню</button>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="competition">
+        <h2 class="visually-hidden">Конкурс</h2>
+        <p class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</p>
+      </section>
+    </section>
 
     <main class="form-main">
 
       <h1 class="visually-hidden">Форма для конкурса</h1>
 
-      <section class="competition">
-        <h2 class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-      </section>
-
     </main>
 
-    <footer class="footer">
-      <div class="footer__logo">
-        <img class="footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип сайта">
+    <footer class="footer-photo">
+      <div class="footer-photo__logo">
+        <img class="footer-photo__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип сайта">
       </div>
-      <div class="footer__social social">
+      <div class="footer-photo__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://www.twitter.com"></a>
@@ -57,9 +63,9 @@
           </li>
         </ul>
       </div>
-      <div class="footer__copyright copyright">
+      <div class="footer-photo__copyright copyright">
         <span class="copyright__text">Разработано:</span>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип HTML Academy"></a>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/50x100" width="50" height="100" alt="Логотип HTML Academy"></a>
       </div>
     </footer>
 

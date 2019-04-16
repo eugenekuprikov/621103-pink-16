@@ -1,8 +1,27 @@
 .photo-call {
+  margin-top: -180px;
   padding-top: 54px;
-  padding-right: 39px;
+  padding-right: 40px;
   padding-bottom: 56px;
-  padding-left: 39px;
+  padding-left: 40px;
+  text-align: center;
   color: @light-gray;
+  background-color: @white;
   .font(14px; 30px; 400);
+}
+
+@media (min-width: @tablet-width) {
+  .photo-call {
+    padding-right: 60px;
+    padding-left: 60px;
+    .font(18px; 30px; 400);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-call {
+    padding-right: 320px;
+    padding-left: 320px;
+    padding-bottom: 120px;
+  }
 }

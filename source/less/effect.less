@@ -1,0 +1,61 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: flex;
+    margin: 0;
+    padding-bottom: 50px;
+    background-color: @gray;
+
+    .effect__clock {
+      padding-top: 50px;
+      padding-left: 20px;
+    }
+
+    .effect__positive {
+      padding-top: 100px;
+      padding-right: 170px;
+      padding-left: 50px;
+      .font(14px; 24px; 400);
+      color: @light-gray;
+    }
+
+    .effect__positive h3 {
+      .font(30px; 36px; 700);
+      color: @black;
+    }
+
+    .effect__more {
+      color: @dark-red;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    padding-bottom: 116px;
+
+    .effect__clock {
+      padding-top: 74px;
+      padding-right: 72px;
+      padding-left: 130px;
+    }
+
+    .effect__positive {
+      padding-top: 168px;
+      padding-right: 350px;
+      padding-left: 0;
+      .font(18px; 30px; 400);
+    }
+
+    .effect__positive h3 {
+      .font(30px; 30px; 700);
+    }
+
+    .effect__more {
+      .font(18px; 30px; 400);
+    }
+  }
+}

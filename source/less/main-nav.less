@@ -1,0 +1,40 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  .list-reset();
+
+  .site-list__item {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    text-align: center;
+  }
+
+  .site-list__link {
+    text-decoration: none;
+    color: @white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__menu {
+    display: none;
+  }
+
+  .main-nav {
+    width: 1050px;
+    margin: 0;
+
+    .main-nav__list {
+      width: 900px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+  }
+}

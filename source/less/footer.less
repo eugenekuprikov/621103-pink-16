@@ -1,9 +1,29 @@
 .footer {
-  padding-top: 40px;
-  padding-bottom: 51px;
+  display: none;
 }
 
-.copyright__text {
-  color: @light-gray;
-  .font(14px; 18px; 400);
+@media (min-width: @tablet-width) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 51px;
+
+    .copyright__text {
+      color: @light-gray;
+      .font(14px; 18px; 400);
+    }
+
+    .social__list {
+      display: flex;
+      width: 100px;
+      .list-reset();
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__text {
+    .font(18px; 18px; 400);
+  }
 }
