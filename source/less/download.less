@@ -1,9 +1,10 @@
 .download {
   width: 100%;
   padding-top: 300px;
-  padding-right: 60px;
-  padding-bottom: 28px;
+  padding-bottom: 16px;
   color: @white;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 0 -67px;
+  background-color: @dark-gray;
   .font(14px; 24px; 300);
 
   .download__slogan {
@@ -13,18 +14,66 @@
   .download__downloading {
     width: 280px;
     margin-right: 20px;
-    margin-bottom: 116px;
+    margin-bottom: 33px;
     margin-left: 19px;
-    padding-top: 20px;
-    padding-right: 39px;
-    padding-bottom: 18px;
-    padding-left: 40px;
-    .font(18px; 18px; 700);
+    padding-top: 15px;
+    padding-right: 27px;
+    padding-bottom: 16px;
+    padding-left: 27px;
     color: @white;
+    background-color: rgba(40, 54, 69, 0);
+    border: 3px solid @white;
+    border-radius: 30px;
+    .font(18px; 18px; 700);
+
+    &:hover {
+      color: @dark-red;
+      background-color: @white;
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+    }
   }
 
   .download__color-to-pink {
-    margin-bottom: 28px;
+    margin-top: -191px;
+    margin-bottom: 20px;
+  }
+
+  .download__social {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+
+  .download__iphone {
+    margin-left: 57px;
+    width: 50px;
+    height: 60px;
+    background-image: url("../img/logo-apple.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .download__android {
+    margin-top: 8px;
+    margin-left: 31px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/logo-android.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .download__windows {
+    margin-top: 11px;
+    margin-left: 30px;
+    width: 50px;
+    height: 47px;
+    background-image: url("../img/logo-microsoft.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
   .download__info {
@@ -38,18 +87,23 @@
   .download {
     display: flex;
     padding-top: 335px;
+    padding-bottom: 0;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% -110px;
+    background-size: 1200px auto;
 
     .download__app-download {
       margin-top: -260px;
+      z-index: 2;
     }
 
     .download__slogan {
       display: block;
-      width: 170px;
+      width: 189px;
       margin: 0;
+      margin-top: 7px;
       margin-left: 20px;
-      margin-bottom: 30px;
-      padding-top: 3px;
+      margin-bottom: 31px;
+      padding-top: 11px;
       padding-left: 55px;
       text-align: center;
       .font(40px; 48px; 300);
@@ -57,17 +111,36 @@
     }
 
     .download__color-to-pink {
-      margin-top: 225px;
+      margin-top: -2px;
       margin-left: -170px;
       order: 2;
     }
 
     .download__downloading {
-      margin-bottom: 117px;
+      width: 300px;
+      margin-bottom: 45px;
+    }
+
+    .download__iphone {
+      margin-left: 66px;
+    }
+
+    .download__android {
+      margin-top: 7px;
+      margin-left: 33px;
+    }
+
+    .download__windows {
+      margin-top: 13px;
+      margin-left: 28px;
+    }
+
+    .download__social {
+      margin-bottom: 33px;
     }
 
     .download__info {
-      width: 350px;
+      width: 340px;
       margin-bottom: 113px;
       padding-left: 0;
       .font(18px; 24px; 300);
@@ -78,6 +151,8 @@
 @media (min-width: @desktop-width) {
   .download {
     padding-top: 0;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% -110px;
+    background-size: 2560px auto;
 
     .download__app-download {
       margin-top: 45px;
@@ -86,27 +161,42 @@
 
     .download__slogan {
       width: 240px;
-      margin-bottom: 60px;
+      margin-top: 60px;
+      margin-bottom: 52px;
+      padding-top: 3px;
       .font(50px; 60px; 300);
     }
 
     .download__downloading {
       width: 301px;
-      margin-bottom: 182px;
-      padding-top: 20px;
-      padding-right: 32px;
-      padding-bottom: 16px;
-      padding-left: 32px;
+      margin-bottom: 66px;
+      margin-left: 45px;
       .font(21px; 18px; 700);
     }
 
     .download__info {
+      margin-top: 0;
       margin-bottom: 125px;
+      margin-left: 24px;
     }
 
     .download__color-to-pink {
-      margin-top: 640px;
+      margin-top: 457px;
       margin-left: 50px;
+    }
+
+    .download__social {
+      margin-bottom: 52px;
+      margin-left: 26px;
+    }
+
+    .download__android {
+      margin-top: 9px;
+      margin-left: 31px;
+    }
+
+    .download__windows {
+      margin-left: 30px;
     }
   }
 }
