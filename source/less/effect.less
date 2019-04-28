@@ -7,27 +7,56 @@
     display: flex;
     margin: 0;
     padding-bottom: 50px;
-    background-color: @gray;
 
     .effect__clock {
-      padding-top: 50px;
+      display: flex;
+      width: 239px;
+      padding-top: 26px;
+      padding-right: 20px;
       padding-left: 20px;
+      fill: @white-gray;
+    }
+
+    .effect__diagram {
+      display: flex;
+      width: 203px;
+      margin-top: 91px;
+      margin-left: -240px;
+      z-index: 10;
+    }
+
+    .effect__time {
+      margin-top: 138px;
+      margin-left: -158px;
+      color: @dark-red;
+      .font(96px; 150px; 700);
     }
 
     .effect__positive {
-      padding-top: 100px;
-      padding-right: 170px;
+      margin-left: 86px;
+      padding-top: 68px;
+      padding-right: 20px;
       padding-left: 50px;
       .font(14px; 24px; 400);
       color: @light-gray;
     }
 
     .effect__positive h3 {
-      .font(30px; 36px; 700);
+      width: 166px;
+      margin-bottom: 0;
       color: @black;
+      .font(30px; 36px; 700);
+    }
+
+    .effect__researches {
+      width: 297px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      letter-spacing: 0.3px;
     }
 
     .effect__more {
+      letter-spacing: 0.3px;
       color: @dark-red;
     }
   }
@@ -36,25 +65,52 @@
 @media (min-width: @desktop-width) {
   .effect {
     padding-bottom: 116px;
+    background-color: @gray;
 
     .effect__clock {
-      padding-top: 74px;
-      padding-right: 72px;
-      padding-left: 130px;
+      width: 298px;
+      padding-top: 26px;
+      padding-right: 70px;
+      padding-left: 132px;
+    }
+
+    .effect__diagram {
+      position: relative;
+      margin-top: 94px;
+      margin-left: -347px;
+      width: 257px;
+    }
+
+    .effect__time {
+      margin-top: 121px;
+      margin-left: -200px;
+      z-index: 11;
+      .font(120px; 187px; 700);
     }
 
     .effect__positive {
-      padding-top: 168px;
-      padding-right: 350px;
+      margin-left: 149px;
+      padding-top: 90px;
+      padding-right: 50px;
       padding-left: 0;
       .font(18px; 30px; 400);
     }
 
     .effect__positive h3 {
+      width: 300px;
+      margin-bottom: 24px;
       .font(30px; 30px; 700);
     }
 
+    .effect__researches {
+      width: 535px;
+      margin-top: 0;
+      margin-bottom: 31px;
+      letter-spacing: 0.4px;
+    }
+
     .effect__more {
+      letter-spacing: 0.4px;
       .font(18px; 30px; 400);
     }
   }
