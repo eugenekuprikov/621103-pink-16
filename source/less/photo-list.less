@@ -1,29 +1,32 @@
 .photo-list {
-  margin-top: -60px;
-  padding-right: 20px;
-  padding-left: 20px;
-
   .photo-list__wrapper {
     background-color: @gray;
   }
 
   .photo-list__panorama {
-    margin-right: 20px;
-    margin-bottom: 101px;
-    margin-left: 160px;
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 120px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 20px;
     color: @white;
     background-color: @dark-red;
+    text-transform: uppercase;
+    z-index: 2;
     .font(12px; 24px; 700);
   }
 
   .photo-list__author-name {
-    padding-left: 10px;
+    padding-left: 17px;
     font-style: normal;
     color: @light-gray;
     .font(14px; 24px; 700);
   }
 
   .photo-list__time {
+    text-transform: uppercase;
     color: @light-gray;
     .font(12px; 24px; 300);
   }
@@ -31,25 +34,45 @@
   .photo-list__text {
     display: block;
     padding-right: 20px;
-    padding-left: 10px;
+    padding-bottom: 8px;
+    padding-left: 18px;
     color: @light-gray;
     .font(14px; 24px; 400);
   }
 
   .photo-list__like {
+    padding-top: 1px;
+    text-transform: uppercase;
     color: @dark-red;
     .font(12px; 24px; 400);
   }
 
   .photo-list__item {
+    position: relative;
     margin: 0;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 
   .photo-list__picture {
-    margin-top: -24px;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
+  }
+
+  .photo-list__image-1 {
+    max-width: 320px;
+    height: 137px;
+    margin-left: -20px;
+  }
+
+  .photo-list__score,
+  .photo-list__score-1 {
+    display: flex;
+  }
+
+  .photo-list__heart {
+    margin-right: 19px;
+    margin-left: 18px;
   }
 }
 
@@ -57,19 +80,26 @@
   .photo-list {
     display: flex;
     flex-wrap: wrap;
-    width: 660px;
+    width: 620px;
+    margin: 0 auto;
 
     .photo-list__item {
-      width: 320px;
+      width: 300px;
       margin-bottom: 20px;
 
       .photo-list__text {
         padding-right: 50px;
-        padding-left: 20px;
+        padding-left: 30px;
+        min-height: 58px;
+      }
+
+      .photo-list__panorama {
+        top: 56px;
+        right: 0;
       }
 
       .photo-list__author-name {
-        padding-left: 20px;
+        padding-left: 27px;
       }
 
       .photo-list__time {
@@ -84,32 +114,67 @@
     }
 
     .photo-list__item:nth-child(2) {
-      margin-bottom: 40px;
-      width: 660px;
+      width: 620px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      padding-bottom: 71px;
 
       .photo-list__text {
-        padding-right: 150px;
+        padding-right: 70px;
+        padding-left: 27px;
+        letter-spacing: 0.3px;
       }
     }
 
     .photo-list__picture {
       margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    .photo-list__image-1 {
+      max-width: 660px;
+      height: 509px;
+      object-fit: cover;
+    }
+
+    .photo-list__score {
+      display: flex;
+      justify-content: space-between;
+      width: 260px;
+      margin: 0 auto;
+    }
+
+    .photo-list__score-1 {
+      display: flex;
+      justify-content: space-between;
+      width: 141px;
+      margin-top: -90px;
+      margin-left: 471px;
+      letter-spacing: 0.3px;
+    }
+
+    .photo-list__heart {
+      order: 1;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-list {
-    width: 1200px;
-    padding-right: 130px;
-    padding-left: 130px;
+    width: 940px;
+    padding-right: 0;
+    padding-left: 0;
+    justify-content: space-between;
 
     .photo-list__item {
-      width: 320px;
-      margin-right: 20px;
+      width: 300px;
+
+      .photo-list__panorama {
+        top: 54px;
+      }
 
       .photo-list__author-name {
-        padding-left: 25px;
+        padding-left: 27px;
       }
 
       .photo-list__text {
@@ -117,12 +182,38 @@
       }
     }
 
+    .photo-list__item:nth-child(2n+1) {
+      margin-right: 0;
+    }
+
     .photo-list__item:nth-child(2) {
       width: 940px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      padding-bottom: 46px;
+
+      .photo-list__picture {
+        margin-bottom: 17px;
+      }
 
       .photo-list__text {
         padding-right: 0;
       }
+    }
+
+    .photo-list__image-1 {
+      max-width: 1200px;
+      height: 506px;
+      margin-left: -130px;
+    }
+
+    .photo-list__score-1 {
+      margin-left: 789px;
+    }
+
+    .photo-list__heart {
+      margin-right: 21px;
+      margin-left: 15px;
     }
   }
 }
