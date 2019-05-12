@@ -1,6 +1,8 @@
 .photo-list {
-  margin-right: 20px;
-  margin-left: 20px;
+  width: 280px;
+  margin: 0 auto;
+  // margin-right: 20px;
+  // margin-left: 20px;
 
   .photo-list__wrapper {
     background-color: @gray;
@@ -62,6 +64,10 @@
     margin-bottom: 11px;
   }
 
+  .photo-list__image {
+    // width: 100%;
+  }
+
   .photo-list__image-1 {
     max-width: 320px;
     height: auto;
@@ -85,6 +91,7 @@
     flex-wrap: wrap;
     width: 620px;
     margin: 0 auto;
+    margin-top: -2px;
 
     .photo-list__item {
       width: 300px;
@@ -159,10 +166,17 @@
       margin-top: -90px;
       margin-left: 471px;
       letter-spacing: 0.3px;
+
+      .photo-list__heart {
+        margin-right: 21px;
+        margin-left: 0;
+        order: 1;
+      }
     }
 
     .photo-list__heart {
       margin-right: 4px;
+      margin-left: 0;
       order: 1;
     }
   }
@@ -171,8 +185,8 @@
 @media (min-width: @desktop-width) {
   .photo-list {
     width: 940px;
-    padding-right: 0;
-    padding-left: 0;
+    // padding-right: 0;
+    // padding-left: 0;
     justify-content: space-between;
 
     .photo-list__item {
