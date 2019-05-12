@@ -1,18 +1,21 @@
 .effect {
+  width: 320px;
+  margin: 0 auto;
   display: none;
 }
 
 @media (min-width: @tablet-width) {
   .effect {
+    width: 660px;
     display: flex;
-    margin: 0;
+    // margin: 0;
     margin-top: -2px;
     padding-bottom: 50px;
 
     .effect__clock {
       display: flex;
       width: 239px;
-      padding-top: 26px;
+      padding-top: 24px;
       padding-right: 20px;
       padding-left: 20px;
       fill: @white-gray;
@@ -21,23 +24,23 @@
     .effect__diagram {
       display: flex;
       width: 203px;
-      margin-top: 91px;
+      margin-top: 87px;
       margin-left: -240px;
       z-index: 10;
     }
 
     .effect__time {
-      margin-top: 138px;
+      margin-top: 134px;
       margin-left: -158px;
       color: @dark-red;
       .font(96px; 150px; 700);
     }
 
     .effect__positive {
-      margin-left: 86px;
-      padding-top: 68px;
-      padding-right: 20px;
-      padding-left: 50px;
+      width: 297px;
+      margin-right: 37px;
+      margin-left: 135px;
+      padding-top: 66px;
       .font(14px; 24px; 400);
       color: @light-gray;
     }
@@ -65,6 +68,7 @@
 
 @media (min-width: @desktop-width) {
   .effect {
+    width: 1200px;
     padding-bottom: 116px;
     background-color: @gray;
 
