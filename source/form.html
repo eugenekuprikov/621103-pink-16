@@ -18,11 +18,9 @@
     <header class="header">
       <div class="background-wrapper">
         <a class="header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Сайт фотоприложения «Пинк»">
-          </picture>
+          <svg class="" width="75" height="23"><use xlink:href="img/sprite-logo.svg#logo-mobile"></use></svg>
+          <svg class="" width="147" height="41"><use xlink:href="img/sprite-logo.svg#logo-tablet"></use></svg>
+          <svg class="" width="147" height="41"><use xlink:href="img/sprite-logo.svg#logo-desktop"></use></svg>
         </a>
         <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
