@@ -1,9 +1,13 @@
 .header {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
   background-color: @light-gray;
 
   .header__logo {
     height: 66px;
-    border-bottom: 2px solid @black;
+    border-bottom: 1px solid @black;
   }
 
   .background-wrapper {
@@ -39,14 +43,24 @@
   // }
 }
 
+.header--closed {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header--opened {
+  background-color: @light-gray;
+}
+
 @media (min-width: @tablet-width) {
   .header {
+    width: 660px;
+
     .header__logo {
-      height: 109px;
+      height: 107px;
     }
 
     .header__logo svg {
-      margin-top: 26px;
+      margin-top: 28px;
       margin-bottom: 34px;
       margin-left: 19px;
       width: 150px;
@@ -67,7 +81,9 @@
 
 @media (min-width: @desktop-width) {
   .header {
+    width: 1200px;
     position: relative;
+    margin: 0 auto;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.3);
 
