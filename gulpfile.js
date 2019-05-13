@@ -81,11 +81,7 @@ gulp.task("webp", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
+    server: "build/"
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
