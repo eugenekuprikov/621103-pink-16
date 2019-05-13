@@ -6,6 +6,7 @@ var sourcemap = require("gulp-sourcemaps");
 var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var csso = require("gulp-csso");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -13,9 +14,8 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    .pipe(postcss([autoprefixer()]))
+    .pipe(csso())
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
