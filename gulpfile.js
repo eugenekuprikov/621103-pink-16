@@ -8,6 +8,7 @@ var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
+var imagemin = require("gulp-imagemin");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
